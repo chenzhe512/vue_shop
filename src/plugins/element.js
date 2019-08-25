@@ -23,7 +23,9 @@ import {
   Row,
   Dialog,
   Pagination,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree
 } from "element-ui";
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm = MessageBox.confirm;
@@ -50,3 +52,5 @@ Vue.use(Col);
 Vue.use(Row);
 Vue.use(Dialog);
 Vue.use(Pagination);
+Vue.use(Tag);
+Vue.use(Tree);

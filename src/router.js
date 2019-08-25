@@ -3,7 +3,9 @@ import Router from "vue-router";
 import Home from "./components/Home.vue";
 import Login from "./components/Login";
 import Welcome from "./components/Welcome";
-import Users from "./components/Users";
+import Users from "./components/user/Users";
+import Rights from "./components/power/Rights";
+import Roles from "./components/power/Roles";
 
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
@@ -28,7 +30,9 @@ export default new Router({
       redirect: "/welcome",
       children: [
         { path: "/welcome", component: Welcome },
-        { path: "/users", component: Users }
+        { path: "/users", component: Users },
+        { path: "/rights", component: Rights },
+        { path: "/roles", component: Roles }
       ]
     }
   ]
