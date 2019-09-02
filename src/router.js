@@ -6,6 +6,10 @@ import Welcome from "./components/Welcome";
 import Users from "./components/user/Users";
 import Rights from "./components/power/Rights";
 import Roles from "./components/power/Roles";
+import Cate from "./components/goods/Cate";
+import Params from "./components/goods/Params";
+import Goods from "./components/goods/Goods";
+import Add from "./components/goods/Add";
 
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
@@ -32,7 +36,11 @@ export default new Router({
         { path: "/welcome", component: Welcome },
         { path: "/users", component: Users },
         { path: "/rights", component: Rights },
-        { path: "/roles", component: Roles }
+        { path: "/roles", component: Roles },
+        { path: "/categories", component: Cate },
+        { path: "/params", component: Params },
+        { path: "/goods", component: Goods },
+        { path: "/add", component: Add,name:'add' },
       ]
     }
   ]
