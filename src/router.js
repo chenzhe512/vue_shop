@@ -10,6 +10,7 @@ import Cate from "./components/goods/Cate";
 import Params from "./components/goods/Params";
 import Goods from "./components/goods/Goods";
 import Add from "./components/goods/Add";
+import Order from "./components/order/Order";
 
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
@@ -41,6 +42,7 @@ export default new Router({
         { path: "/params", component: Params },
         { path: "/goods", component: Goods },
         { path: "/add", component: Add,name:'add' },
+        { path: "/orders", component: Order },
       ]
     }
   ]
